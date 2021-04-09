@@ -21,6 +21,17 @@ If you would like to create your own modules, you can checkout the two included
 examples in the `src/modules/` directory.
 
 
+Building and installing
+=======================
+To compile the mstatus simply run the following:
+
+	$ make
+
+After compiling it, you can install mstatus by running the following:
+
+	# make install
+
+
 How to create a module
 ======================
 This is all documented in the modules.h header file (src/modules.h).
@@ -33,5 +44,5 @@ This is all documented in the config.h header file (src/config.h).
 
 How do I make my clock run if mstatus won't automatically refresh it?
 =====================================================================
-Read the documentation in the config.h headerfile. I personally do so by using
+Read the documentation in the config.h header file. I personally do so by using
 a cronjob.
