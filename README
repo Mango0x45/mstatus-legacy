@@ -1,0 +1,37 @@
+               _        _
+ _ __ ___  ___| |_ __ _| |_ _   _ ___
+| '_ ` _ \/ __| __/ _` | __| | | / __|
+| | | | | \__ \ || (_| | |_| |_| \__ \
+|_| |_| |_|___/\__\__,_|\__|\__,_|___/
+
+
+Overview
+========
+mstatus is a uber-minimalistic signal based statusbar for DWM. All components of
+the statusbar are modules that must either be written by the user, or written by
+someone else and copied by the user.
+
+The statusbar is entirely signal based. This means that for any module to update
+the signal corresponding to said module must be sent. To update the first module
+for example, one could do this:
+
+	$ kill -34 mstatus
+
+If you would like to create your own modules, you can checkout the two included
+examples in the `src/modules/` directory.
+
+
+How to create a module
+======================
+This is all documented in the modules.h header file (src/modules.h).
+
+
+How to configure the statusbar
+==============================
+This is all documented in the config.h header file (src/config.h).
+
+
+How do I make my clock run if mstatus won't automatically refresh it?
+=====================================================================
+Read the documentation in the config.h headerfile. I personally do so by using
+a cronjob.
