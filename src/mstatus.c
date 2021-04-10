@@ -22,8 +22,9 @@ static void write_status(void)
 		(void) sprintf(buffer, "%s" MODULE_DELIMETER "%s", buffer,
 		               output[i]);
 
-	/* Add a right pad for aesthetics */
+#if RIGHTPAD
 	(void) strcat(buffer, " ");
+#endif
 
 #ifdef DEBUG
 	puts(buffer);

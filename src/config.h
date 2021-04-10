@@ -1,7 +1,11 @@
 #ifndef __CONFIG_H_
 #define __CONFIG_H_
 
-#define MODULE_DELIMETER " | " /* The delimeter between modules */
+/* 1 to add a space to the right of the bar. 0 for no pad. */
+#define RIGHTPAD 1
+
+/* The delimeter between modules */
+#define MODULE_DELIMETER " | "
 
 #define SIGBUF    256 /* This is how many bytes any given module can hold */
 #define STATUSBUF 256 /* This is how many bytes the statusbar can hold */
@@ -43,8 +47,7 @@
  * After ANY change to the program, configuration, or modules, you MUST
  * recompile the program. You can do so as follows:
  *
- *     $ make
- *     # make install
+ *     # make clean install
  */
 
 static void (*modules[])(int) = {sb_example_clock, sb_example_date};
