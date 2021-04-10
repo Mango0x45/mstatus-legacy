@@ -25,7 +25,7 @@ clean:
 format:
 	clang-format -i -style=file $(cfiles) $(hfiles)
 
-install:
+install: all
 	cp $(BIN)$(target) $(PREFIX)/bin/$(target)
 
 uninstall:
