@@ -1,9 +1,10 @@
 #ifndef __CONFIG_H_
 #define __CONFIG_H_
 
-/* Not super important configuration */
-#define SIGBUF      256 /* This is how many bytes any given module can hold */
-#define STATUSBUF   256 /* This is how many bytes the statusbar can hold */
+#define MODULE_DELIMETER " | " /* The delimeter between modules */
+
+#define SIGBUF    256 /* This is how many bytes any given module can hold */
+#define STATUSBUF 256 /* This is how many bytes the statusbar can hold */
 
 #include "modules.h"
 

@@ -19,7 +19,8 @@ static void write_status(void)
 	char buffer[STATUSBUF] = {0};
 	(void) strcat(buffer, output[0]);
 	for (int i = 1, len = MODULE_COUNT; i < len; i++)
-		(void) sprintf(buffer, "%s | %s", buffer, output[i]);
+		(void) sprintf(buffer, "%s" MODULE_DELIMETER "%s", buffer,
+		               output[i]);
 
 	/* Add a right pad for aesthetics */
 	(void) strcat(buffer, " ");
