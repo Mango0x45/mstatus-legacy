@@ -23,7 +23,7 @@ examples in the `src/modules/` directory.
 
 Building and installing
 =======================
-To compile the mstatus simply run the following:
+To compile mstatus simply run the following:
 
 	$ make
 

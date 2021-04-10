@@ -36,7 +36,7 @@
  *
  * If you would like to send a signal on a set cycle (such as once a minute for
  * a clock), you could look into using cronjobs. To detect something such as a
- * charger being plugged in, udev might be of useful to you (see `man 3 udev`).
+ * charger being plugged in, udev might be of use to you (see `man 3 udev`).
  *
  * For more information on how to create your own modules, check out the comment
  * in `src/modules.h`.
