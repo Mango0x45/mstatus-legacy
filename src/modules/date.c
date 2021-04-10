@@ -14,6 +14,6 @@ void sb_example_date(int sig)
 	(void) time(&epoch);
 	ltime = localtime(&epoch);
 
-	(void) sprintf(output[MODULE_ID], " %02d/%02d/%d", ltime->tm_mday,
+	(void) sprintf(output[MODULE_ID], "%02d/%02d/%d", ltime->tm_mday,
 	               ltime->tm_mon + 1, ltime->tm_year + BASEYEAR);
 }

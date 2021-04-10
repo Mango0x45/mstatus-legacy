@@ -12,6 +12,6 @@ void sb_example_clock(int sig)
 	(void) time(&epoch);
 	ltime = localtime(&epoch);
 
-	(void) sprintf(output[MODULE_ID], " %02d:%02d", ltime->tm_hour,
+	(void) sprintf(output[MODULE_ID], "%02d:%02d", ltime->tm_hour,
 	               ltime->tm_min);
 }
