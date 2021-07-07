@@ -1,13 +1,14 @@
-target := mstatus
-cfiles := $(wildcard src/*.c) $(wildcard src/modules/*.c)
-hfiles := $(wildcard src/*.h)
-ofiles := $(cfiles:.c=.o)
+target	= mstatus
+cfiles	= $(wildcard src/*.c) $(wildcard src/modules/*.c)
+hfiles	= $(wildcard src/*.h)
+ofiles	= $(cfiles:.c=.o)
 
-BIN    := bin/
-CC     := clang
-CFLAGS := -O3 -I src/ -pedantic -Wall -Wextra -Wmissing-prototypes -Wstrict-prototypes -Wunused-result
-LIBS   := -lX11
-PREFIX := /usr/local
+BIN	= bin/
+CC	= cc
+CFLAGS	= -Ofast -pipe -march=native -mtune=native -I src/ -pedantic -Wall -Wextra \
+	  -Wmissing-prototypes -Wstrict-prototypes -Wunused-result
+LIBS	= -lX11
+PREFIX	= /usr/local
 
 all: $(BIN)$(target)
 
