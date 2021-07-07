@@ -50,6 +50,6 @@
  *     # make clean install
  */
 
-static void (*modules[])(int) = {sb_example_clock, sb_example_date};
+static void (*modules[])(int) = {sb_volume, sb_brightness, sb_battery, sb_clock, sb_date};
 
 #endif /* __CONFIG_H_ */

@@ -69,7 +69,10 @@ extern char output[64][SIGBUF];
  */
 
 /* PUT YOUR MODULE PROTOTYPES HERE */
-void sb_example_clock(int sig);
-void sb_example_date(int sig);
+void sb_volume(int sig);
+void sb_brightness(int sig);
+void sb_battery(int sig);
+void sb_clock(int sig);
+void sb_date(int sig);
 
 #endif /* __MODULES_H_ */
